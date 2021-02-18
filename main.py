@@ -1,8 +1,8 @@
 from binance.client import Client
 import json
 import datetime
-api_key = 'XXXXXXXXXXXXXXX'
-api_secret = 'XXXXXXXXXXXXXX'
+api_key = 'XXXXXXXXXXXXXX'
+api_secret = 'XXXXXXXXXXXXX'
 client = Client(api_key, api_secret)
 
 from binance.websockets import BinanceSocketManager
