@@ -25,9 +25,6 @@ class Trade(object):
         self.__dict__.update(kwargs)
         self.IslemTarihi = datetime.datetime.fromtimestamp(self.T/1000)
 
-"""class Kline(object):
-    def __init__(self,**kwargs):
-        self.__dict__.update(kwargs)"""
 
 latestPrice: Trade = None
 
@@ -44,9 +41,6 @@ def process_message(msg):
             else:
                 print("- DOWN {} - {} - {}".format(newPrice.p, latestPrice.p, newPrice.IslemTarihi))
         latestPrice = newPrice
-
-"""    if msg['e'] == 'kline':
-        klineObj = kline(**msg)"""
 
 
 bm = BinanceSocketManager(client, user_timeout=60)
